@@ -1,0 +1,121 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=bar-background&lang=js&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcya6GOAHmAQOQDCArgE707QDGAnrACIQDOY9EAEa1IMWAFpYAeRF8AhtAAmEaAHNYAQQC2wWtDCUANEXS4AZhViUWzMDnpGTJcgGUwbXAVTFiZmGBcIAC98WABGADZjH3Q_fQB1HAhVAAtLSkFgLEVHGNgWLOB6KgBiACYWAGYcAFYABkonAF8iJuiMYCzIEC8nfmTVeyo5Ul5c3yKtOTA7YtgzPRZRaAAKEDl6OS0eAEpCPKYwBjgAAwASJHXN7YBtOoBdADpoLZwmgB5BegB6AD5tXT6AhnC5XLY8O5PABuciwtDeAFlPj9fjIwPIlCpVMDLhtwZDHoppnJHrp0WAFMo1E1YCoocAIDYeCcANzNdroEa8AAKDP0Q32MXcIFClB4KTkimAAHdGj4Wug2kRVAJFL0fOZ0pUAKTjdACVLpAAsuo5sEyM2AWioOr1-X8chUABk5IIcFgCPx4a12qQNKMeOriMLRSxpjhVEU2HaiRSCDdKABVFycIxWACiiYASmnKABJAByOcMVgA4gAhbm5gCa6YLlHuZq5PBdbo9gp8KlmMPbdTNsX8iWSaSomWycuICtgSvQbH9vCD6BDVB78LtLy0ooBejAsBWCIgWCwUGgPFgyc4O3XrydwDDyyoWggikUuGvm9Lch6sHqTYDrfdRcJnoKYZgFSgkFXREJ0VH0iB4ewIBwQNYBubxiA3LcdB3O1lysQQNhjYl4ycdBINheECDKX9YDJDEqWxKwwnqNMIDsLQ3A8UIkAKLAilKSojQATgADkUQRKCaGcYnIuFQjCES-1o2QKUxNQqDCMoGhLNicA49xPGQXj-KscocBYFgAHYwkk6SfFkyjwiNGoSzo1SGKoITtNpdjOMMnjCjmSgSjMMIWCNOozFs_tkCgghNKUtzKSxKhLJqVjfIM7jjKCkocEso0qhYaLSNiijQi81yVOS9SrAibzdP0rivBy0ohMEGp2oiWynEbJwsFdQCO2IcUZU9eh4RikBgB4NiTyoMBQDtAcQOmWYqB4poERg6czT0kAJVmlD0M7TLmuGnxxUlGVyzhOYwj7Ur0CuqVpSkMwzAQsAAA0CEevJnolV7qECqh6FUAiVj7aHDDqR4aivUqp0VM0CPoeJnzAFIqAi3VWnuFAmhZIA
+	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-graph-modularity/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: 'Currency Distribution - Outstanding Amount',
+    left: 'center',
+    textStyle: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      color: '#2c3e50'
+    }
+  },
+  tooltip: {
+    trigger: 'axis',
+    formatter: function(params) {
+      return `${params[0].name}<br/>Amount: $${params[0].value}M<br/>Outstanding: ${params[0].data.outstanding} invoices`;
+    },
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'category',
+    data: ['USD', 'EUR', 'INR', 'GBP', 'YEN'],
+    axisLabel: {
+      interval: 0,
+      fontWeight: 'bold'
+    }
+  },
+  yAxis: {
+    type: 'value',
+    name: 'Amount (Millions USD)',
+    nameLocation: 'middle',
+    nameGap: 50,
+    axisLabel: {
+      formatter: '{value}M'
+    }
+  },
+  series: [{
+    name: 'Amount',
+    type: 'bar',
+    data: [
+      {value: 250, outstanding: '150', itemStyle: {color: '#3498db'}},
+      {value: 180, outstanding: '120', itemStyle: {color: '#2ecc71'}},
+      {value: 145, outstanding: '90', itemStyle: {color: '#f1c40f'}},
+      {value: 120, outstanding: '75', itemStyle: {color: '#e74c3c'}},
+      {value: 90, outstanding: '60', itemStyle: {color: '#9b59b6'}}
+    ],
+    label: {
+      show: true,
+      position: 'top',
+      formatter: '{c}M'
+    },
+    emphasis: {
+      itemStyle: {
+        shadowBlur: 10,
+        shadowOffsetX: 0,
+        shadowColor: 'rgba(0,0,0,0.5)'
+      }
+    },
+    barWidth: '40%'
+  }]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
