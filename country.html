@@ -1,0 +1,192 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=bar-background&lang=js&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcsA2musiaRjgB5gEDkAkgLYjABOYA9AKJWsewAIhADOYNhABGAV0gxYkgJ6wAwsGnRxiugBpypXADNasOgGMcmnG1370YamADKYRbgKoKFQzGcQAXviwAIwAbHpepD6aAOo4EADmABYmdJLAWAAmtpHoZhns9ADEAExmAMw4AKwADHR2sAC--s3oALoRGMAZkCAe-uKJCdb0AIZUojmk46IACsAQVmz9ka4gQXQiSaOZwADu9RSNneg-bEyjYA7LsIYaZnLQABQgo2yjTCIAlGSR-dBiWDUfhgQSXUYIWCvd6fQg1NoAbga_0BEBY7FB4Mh0I-IkIwURDTYODA0jYcAABgAeMRsGAJAB8ABIkMCMWCwKMAHTQD44RpUzi0-kMqmSNicBkNXKwXggkQEJkstkcDncgBuoyw0n5AFkxRKpTLIsx5YqWWiQWquZrtXqDZLpbkAIIPCDqnBCHBahWwZV8dngrmZIOZb1YESNClIo4kY4kXDDaCZFakEOcgiEOhyjEiXSmU25ugdAagAjlGpxzoJCQp34GHDGejlACkU3QEmSqQALG2TgpgFdgExm339P9OYsADKjSQ4LAEcQ6qskKjOia-zykNYbW069uwXlMDbOpjqTSwJ66iBYLBQAGwACqTkEXwPR5wU-AZku9_oTAgTJMlwd8-QAcVGPpYFqfsZhEGc5wXetvHYC4rhGUwkD3PVDlIVomk6RR11EVN7EUdZ6B_BwEnYbR-3TUZMzoZ9nXzZiAGk2LA6wLmgOjTAAKUg0ZoDYpxFgSSD2BwNjH2dbg2IYZMIFGYtYI3BD51I0hFmuW0CBqftTl8OJEhSeh0iyXD0Hw-N0BEawIBwX1iAoLcKA_egcw4PMjIwciNkkN4D3szkzAAa3oMBBy1EKgRYbYRBI5CvB8MxpF9TZHOc6y8L8iAHCYFw3CCdyvHyLBCkPHA9iBMxth8rka0gpIIDMLkp0Wb02DA95MiczQnkMkIdBGsbXONJBYGAQxDAckxhoqqq6CKcpuwATgADkySQ6AIp10Cmma5pJAhglGpabhWkotpqSR1r2_DIjaL4GjsrwGMzJ0puw8sSmGsMfQIbsqn2mUfq1HUCBKTaAfDX1yk2sHcghu1oZg2BAYjctQfeyJUah2ASn-0asYRmpkfx2BfpCda4aBoncb8w7qchoIwnp7GiYpvGvAJ9mK1J-GztxhoS0iLBZy0lKKC2fZFzYHVmduVDLmuegkDMRpdTi9BWCSx56EWJKw1ymyWn7Mr0E8gt0R8uKdws4K_LEUYIqimKsDinAEtGJLNydNKMvoByJByt78sK4r3Bl0hLoIaAarqhqwBEJr3hAVr2s6xO3l6nYBrAIbRvOsbS4m8Hptm-aDIugortKHAzDMAB2YJHuVlnjprsb49MUoW9GHBQjqJonReiOGk-ohvtZtGidhoWGe7Hnlf59HOYRpnZ5p4nN_LVed7Zs66aXrmSm3yuaY5s_fX-ym-bnwngkFzHhZCS-Uaf9man3kIebFn5SWiFtKyySPLDAiscDKzOGhdWmEtY62VvrAqf5TDG0AjJN6LQSBtBQI0JEKBOCcCEBIW8ABaXYew4AMVgLSaQDwyQ4BQCiMAsB8gaC0IIMhWR9hwEQFuZiThWLaRVKnL6VNr4YxtnQXUIlpCGDdqSCQ0AEgdwaOvf-w0ZEABUm5JGgAUBI2gH4sxpi3bRfJ6AAAlwxgCSD-Ykj19Dix0nbcRM9JHHxCK_GRAAlUYtU5HXBUhGdRXj56n0PFY0wagATSGPGwWAYFuiZDzKY5A38CAj1GjI7guAHh0mgG1dJT1YB4PNugYhsBnRAWmvY6w7DzyDGclyNp-DCHVJUHeCKsBtjJlwEks4mMeGUL4SgJgigVApy5DAJ45genhXzHcaAbo5k4k-D8LcEBDCXg4ZoNgihuE3l4dQwgGy04fheilVhIyTlqkhPsrhPCqHQHOW8XEPI-SEgoCiDIOAuSVQSE8CkxzbwSUxnwrofokAXK-ceRob9JwRgpF8GMpBqmmlwMeC8mRRmvOpk5WqSRrDMPNo0NFQA
+	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-graph-modularity/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: [
+    {
+      text: 'Import/Export Distribution by Country',
+      left: 'center',
+      textStyle: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#2c3e50'
+      }
+    }
+  ],
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    },
+    formatter: function(params) {
+      const exportData = params[0];
+      const importData = params[1];
+      return `<strong>${exportData.name}</strong><br/>
+              Exports: $${exportData.value}M<br/>
+              Imports: $${importData.value}M<br/>
+              Active Deals: ${exportData.data.deals}`;
+    }
+  },
+  legend: {
+    data: ['Exports', 'Imports'],
+    top: 30
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'value',
+    name: 'Amount (Millions USD)',
+    nameLocation: 'middle',
+    nameGap: 50,
+    axisLabel: {
+      formatter: '{value}M'
+    }
+  },
+  yAxis: {
+    type: 'category',
+    data: ['USA', 'UK', 'Germany', 'Japan', 'Singapore', 'UAE', 'India'],
+    axisLabel: {
+      interval: 0,
+      fontWeight: 'bold'
+    }
+  },
+  series: [
+    {
+      name: 'Exports',
+      type: 'bar',
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      itemStyle: {
+        color: new echarts.graphic.LinearGradient(0, 1, 1, 1, [
+          { offset: 0, color: '#3498db' },
+          { offset: 1, color: '#2980b9' }
+        ])
+      },
+      data: [
+        { value: 320, deals: 45 },
+        { value: 280, deals: 38 },
+        { value: 250, deals: 35 },
+        { value: 220, deals: 30 },
+        { value: 190, deals: 25 },
+        { value: 160, deals: 20 },
+        { value: 130, deals: 15 }
+      ],
+      label: {
+        show: true,
+        formatter: '{c}M',
+        position: 'inside'
+      }
+    },
+    {
+      name: 'Imports',
+      type: 'bar',
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      itemStyle: {
+        color: new echarts.graphic.LinearGradient(0, 1, 1, 1, [
+          { offset: 0, color: '#2ecc71' },
+          { offset: 1, color: '#27ae60' }
+        ])
+      },
+      data: [
+        { value: 280, deals: 40 },
+        { value: 250, deals: 35 },
+        { value: 220, deals: 30 },
+        { value: 190, deals: 25 },
+        { value: 160, deals: 20 },
+        { value: 130, deals: 15 },
+        { value: 100, deals: 10 }
+      ],
+      label: {
+        show: true,
+        formatter: '{c}M',
+        position: 'inside'
+      }
+    }
+  ]
+};
+
+// Drill-down data structure
+const countryDrilldown = {
+  'USA': {
+    exports: [
+      { value: 150, name: 'Manufacturing' },
+      { value: 100, name: 'Technology' },
+      { value: 70, name: 'Healthcare' }
+    ],
+    imports: [
+      { value: 130, name: 'Raw Materials' },
+      { value: 90, name: 'Consumer Goods' },
+      { value: 60, name: 'Electronics' }
+    ]
+  }
+  // Add other countries...
+};
+
+// Click handler for drill-down
+myChart.on('click', function(params) {
+  if (countryDrilldown[params.name]) {
+    const drillData = countryDrilldown[params.name];
+    console.log(`Drilling down to ${params.name} details`);
+    // Implement drill-down view here
+  }
+});
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>

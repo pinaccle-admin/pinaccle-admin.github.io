@@ -1,0 +1,181 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=bar-background&lang=js&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcya6GOAHmAQOQCS0AJgK4DOYATgJ6wAiELrEAIwaQYsYADNYAVXo5WWdhGgBzWAHFgwOk0oAaIulziKsSgGMc0MHL0GS5AMph2uAqmLFxMMA4gAvfFgARgA2fQ90LysAdRwIZQALE0oBYCw6WwjYMzTgVioAYgAmMwBmHABWAAZKOwBfIjrwjE0sSBA3OzZ45TkqCGsAW0zPPMGAQzBrfNhxBmgzEWgAChBx1nHBpgBKQizWHDAGVjgAAwASJDWNrYA6aE2cOoAeAVYAegA-AEFB4HmTOdLtdNkxbgA3cZYBhPACyrw-nwcCXWgWB61BtxAcgsVjqAFIEV9aODgBALEwCOibmC6JNxrclKTyTgmHVTgBueqNZq4Xr0ToeZzYqhMMysNJYEboPIQSzJcFySBmKHS2D8RImIJVZroMCgAhFHV2VJTYCDQ3G9BNIhMORyymwADadncEQeg0CNHozG6rLVevYItMIDlAfV4zoEGYBCdlFKFXxelMAHYqkmALq64i46axygAFnTyco1Uz2fQ42ZdAAMuMBDgsAB5RXycYdDCsGEV2ADHCDJwuQJurKpVh0OQAJUj0cdAA4e-gxxPWABhXIzSgFcQ78NLvIr6IQOhgBKGuzWntYeuNwVZWBMBLAADuBDY3Yvo1YEymfVMSAEOoAB0VkuMw6lhbY91gEBgCYAYoGgKh_jAeCJ1qLIbSyfsQBReDHRHCJrwbLA73vB8n1fTsP3IyJvF8AICFCRdRhiOJNSoVJ0gw-8sPvPsB2cVw9lox9IxfAAhaEZm1Fj0DEugXybHc7TAAANAgrVElFFOfdcsDyKhWGUARxmWHVYAsqzbgqKDP2tT8-I8OkwHGWN7JE8jIWhQJSiqLTyI9L1YXGaAGHEcZFmOJRlGg9AmTJCkmOqOTeyGQdhKQbIN0KUoCwATjnOgBEoWAGnIpyIkIrJvJhQ0Uo89AgqoAAVHAzASaBcmUdg4t7aBmSS4IjVSgSMuHbKDM3Yp2rMFMglK8reJY6qIlqwIihGxrYGa0xvmUfgzAYNpjhwPqEpZR1tQC_j0qEiacimwocBCFMcE2xaPMqjxVo8damLnG6sl2ygAAkcChU8VQOc6BsS1kCEB0a7qHNxJsM0wCnygQKmxkJPoqlbtv-4IGtonbHiob5hHNYBIEVWHBoR2A02R_txrRx6Ma3cQgjMItxAJ5aPN-4gSaCLbyZBgBRaA5B6xn4cdEIgYiMb7s5nLMZwFMCzKMwhcwonyfF_zUpBptTzkHRRrhy6CDJ2j1dR5B0em_KKnGT38bKr7Pwzbl0ADuouRQd53m4fgsCwABaXS4Bc8YUByaAWH6xg-HYLgo_SF84EQN1KBCsKIqi_gVEoMjYET9ysiy8WRopz0qHBqtOGlgBHBgIBAT0rEWnt66hOrgjNpuvWl3BFglaByR0MrB9gEmkfH1qyEgXB56WoOeSISg2o6rqDIVqua-dT8h58pix5BhwJDAZ9UQHi-l-HwJ8oskHQfWOhH5hheX4kxVroVepgHByHBJdQ2sAA4OXQOHWA3w6B0DEFbVg6dfT8FZLcHBKAQ4oDDhHVcWByQAGtYAonoLgdBXh0F0BznHPOKBBjsFXCiVgYBbgwGWOYEhZhSHJjmAsJYqwMRbF2G6CAkhlhKAzmwLOOd45OhBHcIKGYJF2BTmnehEBo5cHpAgDBmds66Nzs-aAyixFgjUVyDwCDwYHFgOwf4sBnz_HSL2QYIBcB9zABgBIOBq4MPjkvOUz5OyhXgksTRMAmBpBwLcY-yxTgmOjjFauecWiwGpJiIKdQHwMAECqawyhZSslONsWxvs6iVKAA
+	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-graph-modularity/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: 'Industry Distribution of Underlying Goods',
+    left: 'center',
+    textStyle: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      color: '#2c3e50'
+    }
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: function(params) {
+      return `${params.name}<br/>Amount: $${params.value}M<br/>Share: ${params.percent}%<br/>Invoices: ${params.data.invoices}`;
+    }
+  },
+  legend: {
+    type: 'scroll',
+    orient: 'vertical',
+    right: 10,
+    top: 20,
+    bottom: 20,
+  },
+  series: [
+    {
+      name: 'Industries',
+      type: 'pie',
+      radius: ['35%', '70%'],
+      center: ['40%', '50%'],
+      avoidLabelOverlap: true,
+      itemStyle: {
+        borderRadius: 8,
+        borderColor: '#fff',
+        borderWidth: 2
+      },
+      label: {
+        show: true,
+        formatter: '{b}\n(${c}M)',
+        position: 'outside'
+      },
+      emphasis: {
+        label: {
+          show: true,
+          fontSize: 16,
+          fontWeight: 'bold'
+        },
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      },
+      data: [
+        {
+          value: 300,
+          name: 'Manufacturing',
+          invoices: 150,
+          itemStyle: { color: '#3498db' }
+        },
+        {
+          value: 250,
+          name: 'Technology',
+          invoices: 120,
+          itemStyle: { color: '#2ecc71' }
+        },
+        {
+          value: 220,
+          name: 'Agriculture',
+          invoices: 100,
+          itemStyle: { color: '#e67e22' }
+        },
+        {
+          value: 180,
+          name: 'Healthcare',
+          invoices: 80,
+          itemStyle: { color: '#9b59b6' }
+        },
+        {
+          value: 150,
+          name: 'Automotive',
+          invoices: 70,
+          itemStyle: { color: '#f1c40f' }
+        },
+        {
+          value: 120,
+          name: 'Energy',
+          invoices: 60,
+          itemStyle: { color: '#e74c3c' }
+        },
+        {
+          value: 100,
+          name: 'Others',
+          invoices: 50,
+          itemStyle: { color: '#95a5a6' }
+        }
+      ]
+    }
+  ]
+};
+
+// Drill-down data
+const industryDrilldown = {
+  'Manufacturing': {
+    data: [
+      { value: 120, name: 'Heavy Equipment' },
+      { value: 100, name: 'Electronics' },
+      { value: 80, name: 'Textiles' }
+    ]
+  },
+  'Technology': {
+    data: [
+      { value: 100, name: 'Software' },
+      { value: 90, name: 'Hardware' },
+      { value: 60, name: 'Services' }
+    ]
+  }
+  // Add other industries...
+};
+
+// Click handler for drill-down
+myChart.on('click', function(params) {
+  if (industryDrilldown[params.name]) {
+    const drillData = industryDrilldown[params.name];
+    // Here you would implement the drill-down view transition
+    console.log(`Drilling down to ${params.name} subcategories`);
+  }
+});
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>

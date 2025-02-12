@@ -1,0 +1,138 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=bar-background&lang=js&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcya6GOAHmAQOQAKATsACYCuAxmLACIQDOYtEAIyaQYlADRF0uAGYVYlFjmhgctcZJLkAymACeuAqmLFpMMFogAvfLACMANgnH0p5QHUcEAOYALOZQFgLAZ1Z1gWIOBaKgBiACYWAGYcAFYABkoNAF8iLKcMYCDIEEMNPm8vVSoIFQBbUJMo2oBDMBVo2GkmaDYoaAAKEGbaZtruAEpCMNocMCZaOAADABIkIZGxgDpoUZwsgB4BWgB6AD4AQVrgbrll1fXR7k2AN2asJj2AWUOT060fYY2e7DR6bECqRTKLIAUkWAG5srl8rhKtAGKVjFEIEp_M9VJAWG8GlIcLIqDIwMSCiV5LUIAwGLhMug8kRuKpsdwCABtDRGZw7Wo2Gj0ZhsbhU9B6cFUEDYyWwEYMCBMLmwbmUAAsaWh4nkAHYdZQALr5YzNZ7AekAGWaAhwWAA8njaFhmjTpG92WbiDUcLUdPobPywoFaAxVAAlZrK1UEWxpH3GMMR2gAYUiHUoMWkuYV6BTqjc9LAPgIcQ0LKTsDd9qwGLCsG4PmAAHcCHwPtWXE1Wu0qEgBFkADrQVYsLKffOdMwWazxzWV2CssL-kAA7g8BthWsO7eN5ttju0LtL4yucxWGwObuNdyeXz-QLBZmNleNv0BvQGKaN9DNmM2wAIXeDoE1vf8AQYNtHVzdkwAADQIRMz2IADoNbDMsCiKhaC8ARmn6RNYGI0jNhScZXzCHJqOrBhWmaHlUJDRtXneGxNXSCDYEFYUtDTAAxad0E_QMfxYv8ImwjpoBwVtYBwFgAVoMAni8EZ1wgFhNmtCBZOGABxJVsWUIixBI8ziNsczeT_MIkFgYA4NmZDzKknD5BiRJNQATgADgYARKGXbjjAcpzpHg-M3MzWI4n8tIBB84KaLs9BjXGVCWVQ997Ky2A2I-AhEi4_LeKoAAVSMhO40Tv2DfL0HcmS5IUpThlUzZ1PdHwtJ0vScEM4ycTMiyxus9VGuIcLnLkYjmrixSWH1WwUtC6bHNm6Lwlizy4n1ZocHsDJlymjL8tS2jmPywqbESNIULS8r5AE5o2CxaAvGE2A6qDfdJN22T5MU5TOu6zTtN0_TaCMmMTLAUbSPMibbLSjaIqisaFs8nyBBSXH7DWqb0BmyKXLsGLpNiPycE1TUYxSs7MrSy7nFZ9LEQ5rI4SAA
+	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-graph-modularity/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: 'Product Distribution',
+    left: 'center',
+    textStyle: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      color: '#2c3e50'
+    }
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: function(params) {
+      return `${params.name}<br/>Amount: $${params.value}M<br/>Share: ${params.percent}%`;
+    }
+  },
+  legend: {
+    orient: 'vertical',
+    left: 'left',
+    top: 'middle'
+  },
+  series: [
+    {
+      name: 'Products',
+      type: 'pie',
+      radius: ['40%', '70%'],
+      avoidLabelOverlap: false,
+      itemStyle: {
+        borderRadius: 10,
+        borderColor: '#fff',
+        borderWidth: 2
+      },
+      label: {
+        show: true,
+        formatter: '{b}\n${c}M',
+        fontSize: 14
+      },
+      emphasis: {
+        label: {
+          show: true,
+          fontSize: 16,
+          fontWeight: 'bold'
+        },
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      },
+      data: [
+        {
+          value: 450,
+          name: 'SCF',
+          itemStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              { offset: 0, color: '#3498db' },
+              { offset: 1, color: '#2980b9' }
+            ])
+          }
+        },
+        {
+          value: 350,
+          name: 'TRF',
+          itemStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              { offset: 0, color: '#2ecc71' },
+              { offset: 1, color: '#27ae60' }
+            ])
+          }
+        },
+        {
+          value: 300,
+          name: 'Factoring',
+          itemStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              { offset: 0, color: '#9b59b6' },
+              { offset: 1, color: '#8e44ad' }
+            ])
+          }
+        }
+      ]
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>

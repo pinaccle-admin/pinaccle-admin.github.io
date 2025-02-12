@@ -1,0 +1,250 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=bar-background&lang=js&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcya6GOAHmAQOQDCATjgCYRiwBKEAzgNawAinYWhABGAV0gxKAGiLpcAMwqxKAYxzQwOWtNklyAZTABPXAVTFi8mGH0QAXvlgBGAGwyL6KxoDqOCAHMACyVKYWAsBh0PWBVw4FoqAGIAJhUAZhwAVgAGSl0AX3diDlFhTQNjU0Jorxt7RydkgqJCojBgcMgQM11BAP8tKmYcAFso4gBDUk4ABWAIDUHqj2MQR0oOQImGYAB3PItWiytaEYmwTQTYeVFoFQloAAoQCdoJkY4ASmWLWOgOFhCbgAGRwADccFgELAXm8PgA6BjnCbwoFcUEQrAAbl06D-AJicVo0Nh7w4iORqM4PHgtOUAAkAoFKLAAPzKRI4ADsABZ0ioWQRcdERehSQikWAUWiEHTKABZRgQURjNkc-RpACcKkago5yRwKhUXKclBx0XoYFEtDgAAMADwA2gwfwAPgAJEhxeToO8cPl7QB6J0u1324S0QOu4WigCCI2AtyU7s93vhYImWFE_vl4cj0dF0XY3FgGMhBEdLzgAJMOHgACJYlh4nhPU34vl6x6va8yRSpVTuAHg1WwxGozGRQBRDTMCA4DgEVO9iWU9SYeccfK283EfItIq4AbQBg9CySiYEADalAAQqIjFppMp9JDcNopMoAGITe7xSgALpFOg7TdLAaTZAeRD-EIp4_LACghGkACk4zoEIQQhDyqHAbAYQXMAIxUChaGEhoEwLMCEzCOWGC0NmUHoKQsbTIu8GrOsKjnDg_jxEYpEXtelCxiJz7CbGYkSZ-d63reYmyfJgG4VMnBUTRWBnh4CyXBmGmwNkuGeNYvhMiEYQRAce6MbARgsZwmkgUYaxULp2akb6IzrPGiYaLAjzyhAWBYFA_ywAAqvovCfO5frAsAXEPFQIwQAwDC4DFnkAOITGBOTKaxam0eYHgnGcFxLJQSCuTmlnoPudVFBwWibteujFRYHnrPej4fsKHFUMIrykegAK_lwVDtFKWDDbAowgFsHD2fBxzxaIbEbM1C61XuhmwIJsBXpO7UitVBCNAZk7odSVBxfsu0WOuc4LmdmT3cQwwjIYtZmISzZXJQKSGsapqwPVIpHCKx3RKdzjZBdhawGiN17DND2zpAz3OMkb3oB9X1VEgv0tvqXITDgLi5KDk4Q9EUMeDDAAc8OFkjyiKkwKqo8Qj0Y2xTjM6KeOVI4hPtv9iTyE4Kg8tk8gsmD0Q0x4dMWDDFM44j11s0qnMazzLWwAzGtC99yBE-LGrarqVOikrFgq8QMMyxrrOUIyQRc-g-uY69l2wCbBPm0k3J8mkAo2-Db0O-gMPJALIqu-7zJ6-jBtpMbmifcLP1i0kKjZFqyTCPL1PCgBBS4XTnVUK-QVPrt_XKINvXRKNKjjcok2ZjNc0LUtDtWCoa1UE1QhbcKdt7cirWitHsAw04_Mu1rlC3Z7s2p5jTjp37Aci0HHJpDymoMwwxcR4rUd-zDmrxxaK9rynG5b04GejPj--5_qJ_ZMImol7bK-CMYZcjvh4V27NlRjCfk9Nimo35Z1NqLIkwcXBchwMkZIADI5HWvpmbMBA8p-wgTraBftvZsS5Agj-OcUEcgYGkTIMtKYKw8JPdAc8YYQWXtwKgSd14UIIDyah2czZfwBiHfk2DL64OAfghoYCLCJyZAIzebFsa70zjQsRdCAb50LufVhhwy4VzasKau35fztBbisJy6xm4zTbh3SgXdpq7V7hMRabEB6rXWqPTc20GrCn2odWeeCswKMUcQV2j9yFqLOhohGe9aF_SSJqYQmR0kuGkWwoBhZGZRKurw5QsSEaCNhiIpBB8AYMxwDyHk2wcmHDyaKNWhTNbFIVKQ1Rz82JG00e_URyDUnqiljLOWF9cmyPyfIoR7SSEczIWU-JsA3ADMQYHcREstQ6iwZM5p0zWmzNgHHHhzj-EwN5gQHeSStFDOqZyXkUj9k7UOSdY5S9iErwuXE3pBBEmFmSTokZeiC6aiLk0qy0Ry7GPQOXfIWIgA
+	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://echarts.apache.org/en/js/vendors/echarts-graph-modularity/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: 'Credit Risk Distribution',
+    left: 'center',
+    textStyle: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      color: '#2c3e50'
+    },
+    subtextStyle: {
+      fontSize: 12
+    }
+  },
+  tooltip: {
+    trigger: 'item',
+    axisPointer: {
+      type: 'shadow'
+    },
+    formatter: function(params) {
+      const riskLevel = params.data.riskLevel;
+      const color = params.data.risk === 'High' ? '#e74c3c' : 
+                    params.data.risk === 'Medium' ? '#f39c12' : '#2ecc71';
+      return `<strong>${params.name}</strong><br/>
+              Amount: $${params.value}M<br/>
+              Risk Level: <span style="color:${color}">${params.data.risk}</span><br/>
+              Entities: ${params.data.entities}`;
+    }
+  },
+  legend: {
+    data: ['Buyer', 'Seller', 'Factor'],
+    top: 30
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'category',
+    data: ['AAA', 'AA', 'A', 'BBB', 'BB', 'B'],
+    axisLabel: {
+      interval: 0,
+      fontWeight: 'bold'
+    }
+  },
+  yAxis: {
+    type: 'value',
+    name: 'Amount (Millions USD)',
+    nameLocation: 'middle',
+    nameGap: 50,
+    axisLabel: {
+      formatter: '{value}M'
+    }
+  },
+  series: [
+    {
+      name: 'Buyer',
+      type: 'bar',
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [
+        {
+          value: 120,
+          risk: 'Low',
+          entities: 15,
+          itemStyle: { color: '#2ecc71' }
+        },
+        {
+          value: 100,
+          risk: 'Low',
+          entities: 12,
+          itemStyle: { color: '#27ae60' }
+        },
+        {
+          value: 80,
+          risk: 'Medium',
+          entities: 10,
+          itemStyle: { color: '#f1c40f' }
+        },
+        {
+          value: 60,
+          risk: 'Medium',
+          entities: 8,
+          itemStyle: { color: '#f39c12' }
+        },
+        {
+          value: 40,
+          risk: 'High',
+          entities: 5,
+          itemStyle: { color: '#e74c3c' }
+        },
+        {
+          value: 20,
+          risk: 'High',
+          entities: 3,
+          itemStyle: { color: '#c0392b' }
+        }
+      ]
+    },
+    {
+      name: 'Seller',
+      type: 'bar',
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [
+        {
+          value: 110,
+          risk: 'Low',
+          entities: 13,
+          itemStyle: { color: '#3498db' }
+        },
+        {
+          value: 90,
+          risk: 'Low',
+          entities: 11,
+          itemStyle: { color: '#2980b9' }
+        },
+        {
+          value: 70,
+          risk: 'Medium',
+          entities: 9,
+          itemStyle: { color: '#e67e22' }
+        },
+        {
+          value: 50,
+          risk: 'Medium',
+          entities: 7,
+          itemStyle: { color: '#d35400' }
+        },
+        {
+          value: 30,
+          risk: 'High',
+          entities: 4,
+          itemStyle: { color: '#e74c3c' }
+        },
+        {
+          value: 10,
+          risk: 'High',
+          entities: 2,
+          itemStyle: { color: '#c0392b' }
+        }
+      ]
+    },
+    {
+      name: 'Factor',
+      type: 'bar',
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [
+        {
+          value: 100,
+          risk: 'Low',
+          entities: 12,
+          itemStyle: { color: '#9b59b6' }
+        },
+        {
+          value: 80,
+          risk: 'Low',
+          entities: 10,
+          itemStyle: { color: '#8e44ad' }
+        },
+        {
+          value: 60,
+          risk: 'Medium',
+          entities: 8,
+          itemStyle: { color: '#f1c40f' }
+        },
+        {
+          value: 40,
+          risk: 'Medium',
+          entities: 6,
+          itemStyle: { color: '#f39c12' }
+        },
+        {
+          value: 20,
+          risk: 'High',
+          entities: 3,
+          itemStyle: { color: '#e74c3c' }
+        },
+        {
+          value: 10,
+          risk: 'High',
+          entities: 2,
+          itemStyle: { color: '#c0392b' }
+        }
+      ]
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
